@@ -1,3 +1,5 @@
+<!-- Document Type and Head Section: Defines the document type and contains meta tags for character set, viewport, title, and link to the stylesheet (styles.css) -->
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +10,12 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <!-- Main Heading and Introduction -->
     <h1>Registration Form</h1>
     <p>Please fill out this form with the required information</p>
+    <!-- User Registration Form -->
     <form method="post" action='https://register-demo.freecodecamp.org'>
+        <!-- Personal Details Section -->
         <fieldset>
             <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text"
                     required /></label>
@@ -20,6 +25,7 @@
             <label for="new-password">Create a New Password: <input id="new-password" name="new-password"
                     type="password" pattern="[a-z0-5]{8,}" required /></label>
         </fieldset>
+        <!-- Account Type and Terms Section -->
         <fieldset>
             <label for="personal-account"><input id="personal-account" type="radio" name="account-type"
                     class="inline" /> Personal Account</label>
@@ -30,6 +36,7 @@
                 I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/" rel="noopener">terms and conditions</a>
             </label>
         </fieldset>
+        <!-- Additional Information Section -->
         <fieldset>
             <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file"
                     name="file" /></label>
